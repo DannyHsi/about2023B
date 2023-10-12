@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>習祐翔個人網頁20230921-4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>習祐翔個人網頁20230921-4</title>
+    <style type="text/css">
+        * { font-family:"標楷體"; margin-left:auto; margin-right:auto;}
+        h1 {color:#0072E3; font-size:60px;}
+        h2 {color:#4A4AFF; font-size:40px;}
+    </style>
+
+    <script>
+        function change1() {
+        document.getElementById("pic").src = "mountain.jpg";
+        document.getElementById("h2text").innerText = "靜宜資管";
+        }
+
+        function change2() {
+        document.getElementById("pic").src = "cliff.jpg";
+        document.getElementById("h2text").innerText = "Yu-Hsiang Hsi";
+        }
+
+        </script>
 </head>
 <body>
-	  <img src="cliff.jpg"></img>
-	  <h1>習祐翔<h1>
-      <h2>Yu-Hsiang Hsi<h2>
+    <?php echo date("Y-m-d") ?>
+    <table width="70%">
+         <tr>
+            <td>
+                <img src="cliff.jpg" width="100%"id="pic"onmouseover="change1()" onmouseout="change2()"></img>
+            </td>
 
-      <a href="https://www1.pu.edu.tw/~tcyang">個人網頁</a>：https://www1.pu.edu.tw/~tcyang<br>
-      <a href="https://www.facebook.com/tcyang1971">FB</a>：https://www.facebook.com/tcyang1971<br>
-      <a href="tel:0988826428">Tel</a>: 0988826428<br>
-      <a href="mailto:dannyhsi0630@gmail.com">E-Mail</a>: dannyhsi0630@gmail.com<br>
+            <td>
+                <h1>習祐翔</h1>
+                <h2 id="h2text">Yu-Hsiang Hsi</h2>
+            </td>
+        </tr>
+    </table >
 
-      大象席地而坐電影配樂<br>
+    <table width="70%"border="1">
+         <tr>
+            <td>
+                <a href="https://www1.pu.edu.tw/~tcyang">個人網頁</a>：https://www1.pu.edu.tw/~tcyang<br>
+                <a href="https://www.facebook.com/tcyang1971">FB</a>：https://www.facebook.com/tcyang1971<br>
+                <a href="tel:0988826428">Tel</a>: 0988826428<br>
+                <a href="mailto:dannyhsi0630@gmail.com">E-Mail</a>: dannyhsi0630@gmail.com<br>
+            </td>
 
-      <audio controls>
+            <td>
+                大象席地而坐電影配樂<br>
+                <audio controls>
+                       <source src="elephant.mp3" type="audio/mP3">
+                </audio><br>
+            </td>
+            
+            <td>    
+                不要去臺灣<br>
+                <iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe>
+            </td>
+        </tr>
+        </table>
 
-      <source src="elephant.mp3" type="audio/mP3">
-
-      </audio><br>
-
-      不要去臺灣<br>
-
-      <iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe>
 </body>
 </html
